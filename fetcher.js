@@ -14,7 +14,7 @@ const downloader = function(url, path) {
         if (err) {
           console.error('Error writing files: ', err);
         } else {
-          console.log('File download successfully.');
+          console.log(`Downloaded and saved ${response.headers['content-length']} bytes to ./index.html`);
         }
       })
     }
